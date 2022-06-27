@@ -13,19 +13,23 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-family: 'Showcard Gothic';
 }
 /* header{
       w
   } */
 
-main {
+header {
+  margin-top:0;
+  padding-top: 0;
 }
 
 .rgb {
   font-size: 1.4rem;
   text-transform: uppercase;
 }
+
 
 .colors {
   display: grid;

@@ -10,3 +10,14 @@ If the player clicks on the wrong tile:
 - The tile disappears and they get a chance to click on the remaining tiles.
 
 Hint: use loops, high-order array methods and conditional statements.
+
+
+
+  if(diffEls[i].style.backgroundColor === randomColor()){
+        console.log(diffEls[i].style.backgroundColor, "=", randomColor())
+        statusEl.textContent = "Correct!!";
+        resetBtn.textContent = "New game?";
+        changeColors();
+      }else{
+        diffEls.style.backgroundColor = 'black'
+      }
