@@ -17,8 +17,8 @@ function checkColors() {
   // your code here
   for (let i = 0; i < colorsBlocks.length; i++) {
     colorsBlocks[i].addEventListener('click', ()=>{
-      console.log(colorsBlocks[i].style.backgroundColor);
-      console.log(colorsBlocks[i].style.backgroundColor)
+      //console.log(colorsBlocks[i].style.backgroundColor);
+      //console.log(colorsBlocks[i].style.backgroundColor)
       if (colorsBlocks[i].style.backgroundColor === colors[pickedColor]) {
         statusEl.textContent = "CORRECT!!"
         resetBtn.textContent = "New game?";
@@ -26,7 +26,7 @@ function checkColors() {
         header.style.backgroundColor = colors[pickedColor]
         statusEl.style.backgroundColor = colors[pickedColor]
       } else {
-        colorsBlocks[i].style.backgroundColor = 'black'
+        colorsBlocks[i].style.backgroundColor = 'white'
       }
     })
  
@@ -77,7 +77,7 @@ function random(r) {
 //This  function changes the number of color tiles to display depending on the difficulty chosen by the player
 function setNumberOfTiles() {
   // your code here
-  for(let i = 0 ; i <= 1 ; i++){ 
+  for(let i = 0 ; i <= n ; i++){ 
       diffEls[i].addEventListener('click', ()=>{
       diffEls[0].classList.remove('active');
       diffEls[1].classList.remove('active');
